@@ -7,9 +7,9 @@ package trabajopractico03;
  */
 // Clase Gallina
 public class Gallina {
-    int idGallina;
-    int edad;
-    int huevosPuestos;
+    private int idGallina;
+    private int edad;
+    private int huevosPuestos;
 
     // Constructor
     public Gallina(int idGallina) {
@@ -17,7 +17,34 @@ public class Gallina {
         this.edad = 0;
         this.huevosPuestos = 0;
     }
+    
+    // Getters y Setters
 
+    public int getIdGallina() {
+        return idGallina;
+    }
+
+    public void setIdGallina(int idGallina) {
+        this.idGallina = idGallina;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getHuevosPuestos() {
+        return huevosPuestos;
+    }
+
+    public void setHuevosPuestos(int huevosPuestos) {
+        this.huevosPuestos = huevosPuestos;
+    }
+    
+    
     // Método para que la gallina ponga un huevo
     public void ponerHuevo() {
         this.huevosPuestos++;

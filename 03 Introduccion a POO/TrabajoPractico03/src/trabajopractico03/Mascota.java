@@ -6,9 +6,9 @@ package trabajopractico03;
  * @author Andres Meshler
  */
 public class Mascota {
-    String nombre;
-    String especie;
-    int edad;
+    private String nombre;
+    private String especie;
+    private int edad;
 
     // Constructor
     public Mascota(String nombre, String especie, int edad) {
@@ -30,6 +30,30 @@ public class Mascota {
     public void cumplirAnios() {
         this.edad++;
         System.out.println("¡Feliz cumple, " + this.nombre + "! Ahora tiene " + this.edad + " años.");
+    }
+    // Getter y Setters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public static void main(String[] args) {

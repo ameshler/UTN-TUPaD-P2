@@ -7,9 +7,9 @@ package trabajopractico03;
  */
 // Clase NaveEspacial
 public class NaveEspacial {
-    String nombre;
-    int combustible;
-    final int MAX_COMBUSTIBLE = 100; // Límite máximo de combustible
+    private String nombre;
+    private int combustible;
+    private final int MAX_COMBUSTIBLE = 100; // Límite máximo de combustible
 
     // Constructor
     public NaveEspacial(String nombre, int combustibleInicial) {

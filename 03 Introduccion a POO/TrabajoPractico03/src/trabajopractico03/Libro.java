@@ -37,7 +37,7 @@ public class Libro {
     // Setter con validación para anioPublicacion
     public void setAnioPublicacion(int anio) {
         // año positivo y no futuro
-        if (anio > 0 && anio <= java.time.Year.now().getValue()) {
+        if (anio > 1900 && anio <= java.time.Year.now().getValue()) {
             this.anioPublicacion = anio;
         } else {
             System.out.println("Error: El año de publicación '" + anio + "' no es válido.");
@@ -59,11 +59,14 @@ public class Libro {
         Libro miLibro = new Libro("La física en la vida cotidiana", "Alberto Rojo", 2010);
         miLibro.mostrarInfo();
         
+        System.out.println("\nIntentando modificar el año con un valor inválido (1875)...");
+        miLibro.setAnioPublicacion(1875); // Año incorrecto, no debe permitirse.
+        
         System.out.println("\nIntentando modificar el año con un valor inválido (2080)...");
-        miLibro.setAnioPublicacion(2080);
+        miLibro.setAnioPublicacion(2080); // Año incorrecto, no debe permitirse.
         
         System.out.println("\nIntentando modificar el año con un valor válido (2011)...");
-        miLibro.setAnioPublicacion(2011);
+        miLibro.setAnioPublicacion(2011); // Año correcto, debe permitirse.
         
         System.out.println("\nMostrando la información final del libro:");
         miLibro.mostrarInfo();
