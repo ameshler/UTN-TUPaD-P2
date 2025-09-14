@@ -59,7 +59,6 @@ public class NaveEspacial {
     }
 
     public static void main(String[] args) {
-        // Tarea: Crear una nave con 50u de combustible, intentar avanzar sin recargar, luego recargar y avanzar.
         // Instanciar nave con 50u de combustible
         NaveEspacial arsat = new NaveEspacial("ARSAT", 50);
         arsat.mostrarEstado();
